@@ -1,0 +1,662 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Grand Baie Villa | Private Pool Villa Rental Mauritius</title>
+
+<meta name="description" content="Enjoy a beautiful one-bedroom villa with swimming pool in Grand Baie, Mauritius. Rs 2000 per night or Rs 20000 per month. Book directly on WhatsApp.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #263238;
+    background: #fff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: #ffffff;
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.07);
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 800;
+    color: #12675e;
+}
+
+.logo span {
+    color: #d4a34c;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #168477;
+}
+
+.nav-btn {
+    background: #168477;
+    color: white !important;
+    padding: 11px 19px;
+    border-radius: 30px;
+}
+
+.hero {
+    min-height: 620px;
+    background:
+    linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.48)),
+    url('images/myproduct.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 80px 9%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-tag {
+    background: rgba(255,255,255,0.2);
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 30px;
+    margin-bottom: 22px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 27px;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    background: #168477;
+    color: white;
+}
+
+.btn-light {
+    background: white;
+    color: #12675e;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading small {
+    color: #168477;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    margin-top: 8px;
+    color: #183d39;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.about-content h2 {
+    font-size: 34px;
+    color: #183d39;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: #666;
+    margin-bottom: 18px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px;
+    margin-top: 25px;
+}
+
+.feature {
+    background: #f1f8f6;
+    padding: 17px;
+    border-radius: 12px;
+    font-weight: 600;
+    color: #245b53;
+}
+
+.gallery {
+    background: #f7faf9;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.025);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.price-card {
+    border: 1px solid #e3ece9;
+    padding: 35px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.price-card.featured {
+    background: #eaf5f2;
+    border: 2px solid #168477;
+}
+
+.price-card h3 {
+    font-size: 23px;
+    color: #245b53;
+}
+
+.price {
+    font-size: 38px;
+    font-weight: 800;
+    color: #168477;
+    margin: 20px 0;
+}
+
+.price span {
+    font-size: 15px;
+    color: #777;
+    font-weight: 500;
+}
+
+.price-card p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.location {
+    background: #f7faf9;
+    text-align: center;
+}
+
+.location p {
+    color: #666;
+    max-width: 650px;
+    margin: 15px auto;
+}
+
+.contact {
+    background: #183d39;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    color: #d7e6e2;
+    margin-bottom: 25px;
+}
+
+.contact-details {
+    margin-top: 30px;
+    line-height: 2.5;
+}
+
+.contact-details a {
+    color: white;
+}
+
+footer {
+    background: #102c29;
+    color: #cbd8d5;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 2000;
+    background: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-weight: 800;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 800px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 550px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 520px;
+        padding: 50px 6%;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid img {
+        height: 240px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .whatsapp-float {
+        bottom: 15px;
+        right: 12px;
+        padding: 12px 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">GRAND BAIE <span>VILLA</span></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Villa</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#pricing">Prices</a>
+        <a href="#contact" class="nav-btn">Book Now</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+    <div class="hero-content">
+
+        <div class="hero-tag">
+            YOUR PRIVATE ESCAPE IN MAURITIUS
+        </div>
+
+        <h1>Beautiful 1 Bedroom Villa With Private Pool</h1>
+
+        <p>
+            Experience comfort, privacy and relaxation
+            in beautiful Grand Baie, Mauritius.
+        </p>
+
+        <a href="#pricing" class="btn btn-primary">
+            View Rental Prices
+        </a>
+
+        <a href="https://wa.me/23057596425?text=Hello%2C%20I%20am%20interested%20in%20your%20Grand%20Baie%20villa."
+           target="_blank" class="btn btn-light">
+            Book on WhatsApp
+        </a>
+
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+
+<section id="about">
+
+    <div class="about">
+
+        <div class="about-image">
+            <img src="images/myproduct2.jpg"
+                 alt="Grand Baie villa with swimming pool">
+        </div>
+
+        <div class="about-content">
+
+            <h2>Your Perfect Stay in Grand Baie</h2>
+
+            <p>
+                Welcome to our charming one-bedroom villa
+                in Grand Baie, Mauritius.
+            </p>
+
+            <p>
+                Enjoy a relaxing stay in a comfortable private
+                villa with a swimming pool. Whether you are
+                planning a short holiday or a longer stay,
+                this villa offers a welcoming place to relax.
+            </p>
+
+            <div class="features">
+
+                <div class="feature">🛏️ 1 Comfortable Bedroom</div>
+
+                <div class="feature">🏊 Swimming Pool</div>
+
+                <div class="feature">🏡 Private Villa</div>
+
+                <div class="feature">📍 Grand Baie, Mauritius</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+    <div class="section-heading">
+        <small>EXPLORE THE PROPERTY</small>
+        <h2>Villa Photo Gallery</h2>
+        <p>Discover your next relaxing holiday destination.</p>
+    </div>
+
+    <div class="gallery-grid">
+
+        <img src="images/myproduct.jpg"
+             alt="Villa exterior">
+
+        <img src="images/myproduct2.jpg"
+             alt="Swimming pool">
+
+        <img src="images/myproduct3.jpg"
+             alt="Villa bedroom">
+
+        <img src="images/myproduct4.jpg"
+             alt="Villa living area">
+
+        <img src="images/myproduct5.jpg"
+             alt="Villa interior">
+
+        <img src="images/myproduct6.jpg"
+             alt="Villa outdoor area">
+
+    </div>
+
+</section>
+
+<!-- PRICING -->
+
+<section id="pricing">
+
+    <div class="section-heading">
+        <small>SIMPLE AND AFFORDABLE</small>
+        <h2>Our Rental Prices</h2>
+        <p>Choose the rental option that suits your stay.</p>
+    </div>
+
+    <div class="pricing-grid">
+
+        <div class="price-card featured">
+
+            <h3>Monthly Rental</h3>
+
+            <div class="price">
+                Rs 20,000
+                <span>/ month</span>
+            </div>
+
+            <p>
+                Ideal for longer stays and extended holidays.
+            </p>
+
+            <a href="https://wa.me/23057596425?text=Hello%2C%20I%20am%20interested%20in%20the%20monthly%20rental%20of%20your%20Grand%20Baie%20villa%20at%20Rs%2020000."
+               target="_blank"
+               class="btn btn-primary">
+                Enquire Monthly
+            </a>
+
+        </div>
+
+        <div class="price-card">
+
+            <h3>Nightly Rental</h3>
+
+            <div class="price">
+                Rs 2,000
+                <span>/ night</span>
+            </div>
+
+            <p>
+                Perfect for a short getaway or holiday.
+            </p>
+
+            <a href="https://wa.me/23057596425?text=Hello%2C%20I%20am%20interested%20in%20booking%20your%20Grand%20Baie%20villa%20at%20Rs%202000%20per%20night."
+               target="_blank"
+               class="btn btn-primary">
+                Enquire Nightly
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- LOCATION -->
+
+<section class="location">
+
+    <div class="section-heading">
+        <small>DISCOVER MAURITIUS</small>
+        <h2>Located in Grand Baie</h2>
+    </div>
+
+    <p>
+        Stay in Grand Baie, one of the most popular
+        holiday destinations in Mauritius. Enjoy the
+        island atmosphere and discover the beautiful
+        surroundings during your stay.
+    </p>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+    <h2>Ready to Book Your Stay?</h2>
+
+    <p>
+        Contact us directly for availability,
+        reservations and further information.
+    </p>
+
+    <a href="https://wa.me/23057596425?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20Grand%20Baie%20villa."
+       target="_blank"
+       class="btn btn-primary">
+        💬 Contact on WhatsApp
+    </a>
+
+    <a href="mailto:rushilkoosul31@gmail.com?subject=Grand%20Baie%20Villa%20Booking"
+       class="btn btn-light">
+        ✉ Send an Email
+    </a>
+
+    <div class="contact-details">
+
+        <p>
+            WhatsApp:
+            <a href="https://wa.me/23057596425">
+                +230 5759 6425
+            </a>
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:rushilkoosul31@gmail.com">
+                rushilkoosul31@gmail.com
+            </a>
+        </p>
+
+        <p>📍 Grand Baie, Mauritius</p>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Grand Baie Villa. All Rights Reserved.
+    </p>
+
+    <p>
+        Your relaxing holiday destination in Mauritius.
+    </p>
+
+</footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+
+<a href="https://wa.me/23057596425?text=Hello%2C%20I%20am%20interested%20in%20your%20villa."
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat with us on WhatsApp">
+
+    💬 WhatsApp
+
+</a>
+
+</body>
+</html>
